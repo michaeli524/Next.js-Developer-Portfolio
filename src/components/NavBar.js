@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { TwitterIcon, GithubIcon, LinkArrow } from "./Icons";
+import { TwitterIcon, GithubIcon, LinkArrow, InsIcon } from "./Icons";
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -31,18 +32,46 @@ const NavBar = () => {
           href="https://blog.mikolee.xyz"
           title="博客"
           className="ml-4"
+          target={"_blank"}
         />
       </nav>
-      <nav>
-        <Link href="https://twitter.com/michael_li524" target={"_blank"}>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://twitter.com/michael_li524"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mr-3"
+        >
           <TwitterIcon />
-        </Link>
-        <Link href="https://github.com/michaeli524" target={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://github.com/michaeli524"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
           <GithubIcon />
-        </Link>
-        <Link href="/" target={"_blank"}>
+        </motion.a>
+        <motion.a
+          href="https://www.instagram.com/ime_mkl/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
+          <InsIcon />
+        </motion.a>
+        <motion.a
+          href="/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 ml-3"
+        >
           <LinkArrow />
-        </Link>
+        </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />

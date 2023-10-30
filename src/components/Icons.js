@@ -2,7 +2,7 @@ export const TwitterIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1.23em"
-    height="1em"
+    height="1.23em"
     viewBox="0 0 256 209"
     className={`w-full h-auto ${className}`}
     {...rest}
@@ -18,8 +18,8 @@ export const TwitterIcon = ({ className, ...rest }) => (
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width="1.23em"
+    height="1.23em"
     viewBox="0 0 512 512"
     {...rest}
     className={`w-full h-auto ${className}`}
@@ -32,24 +32,138 @@ export const GithubIcon = ({ className, ...rest }) => (
   </svg>
 );
 
-export const LinkedInIcon = ({ className, ...rest }) => (
+export const InsIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 256"
-    {...rest}
+    xmlSpace="preserve"
+    width="1.23em"
+    height="1.23em"
+    viewBox="0 0 551.034 551.034"
     className={`w-full h-auto ${className}`}
+    {...rest}
   >
-    <path fill="none" d="M0 0h256v256H0z" />
-    <g fill="none">
-      <rect width={256} height={256} fill="#fff" rx={60} />
-      <rect width={256} height={256} fill="#0A66C2" rx={60} />
-      <path
-        fill="#fff"
-        d="M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82 19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4ZM38 59.627c0 11.865 9.767 21.627 21.632 21.627 11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38 47.762 38 38 47.763 38 59.627Zm6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4Z"
+    <linearGradient
+      id="a"
+      x1={275.517}
+      x2={275.517}
+      y1={4.571}
+      y2={549.72}
+      gradientTransform="matrix(1 0 0 -1 0 554)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#e09b3d",
+        }}
       />
-    </g>
+      <stop
+        offset={0.3}
+        style={{
+          stopColor: "#c74c4d",
+        }}
+      />
+      <stop
+        offset={0.6}
+        style={{
+          stopColor: "#c21975",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#7024c4",
+        }}
+      />
+    </linearGradient>
+    <path
+      d="M386.878 0H164.156C73.64 0 0 73.64 0 164.156v222.722c0 90.516 73.64 164.156 164.156 164.156h222.722c90.516 0 164.156-73.64 164.156-164.156V164.156C551.033 73.64 477.393 0 386.878 0zM495.6 386.878c0 60.045-48.677 108.722-108.722 108.722H164.156c-60.045 0-108.722-48.677-108.722-108.722V164.156c0-60.046 48.677-108.722 108.722-108.722h222.722c60.045 0 108.722 48.676 108.722 108.722v222.722z"
+      style={{
+        fill: "url(#a)",
+      }}
+    />
+    <linearGradient
+      id="b"
+      x1={275.517}
+      x2={275.517}
+      y1={4.571}
+      y2={549.72}
+      gradientTransform="matrix(1 0 0 -1 0 554)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#e09b3d",
+        }}
+      />
+      <stop
+        offset={0.3}
+        style={{
+          stopColor: "#c74c4d",
+        }}
+      />
+      <stop
+        offset={0.6}
+        style={{
+          stopColor: "#c21975",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#7024c4",
+        }}
+      />
+    </linearGradient>
+    <path
+      d="M275.517 133C196.933 133 133 196.933 133 275.516s63.933 142.517 142.517 142.517S418.034 354.1 418.034 275.516 354.101 133 275.517 133zm0 229.6c-48.095 0-87.083-38.988-87.083-87.083s38.989-87.083 87.083-87.083c48.095 0 87.083 38.988 87.083 87.083 0 48.094-38.989 87.083-87.083 87.083z"
+      style={{
+        fill: "url(#b)",
+      }}
+    />
+    <linearGradient
+      id="c"
+      x1={418.306}
+      x2={418.306}
+      y1={4.571}
+      y2={549.72}
+      gradientTransform="matrix(1 0 0 -1 0 554)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop
+        offset={0}
+        style={{
+          stopColor: "#e09b3d",
+        }}
+      />
+      <stop
+        offset={0.3}
+        style={{
+          stopColor: "#c74c4d",
+        }}
+      />
+      <stop
+        offset={0.6}
+        style={{
+          stopColor: "#c21975",
+        }}
+      />
+      <stop
+        offset={1}
+        style={{
+          stopColor: "#7024c4",
+        }}
+      />
+    </linearGradient>
+    <circle
+      cx={418.306}
+      cy={134.072}
+      r={34.149}
+      style={{
+        fill: "url(#c)",
+      }}
+    />
   </svg>
 );
 
@@ -425,8 +539,8 @@ export const CircularText = ({ className, ...rest }) => (
 export const LinkArrow = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
+    width="1.23em"
+    height="1.23em"
     viewBox="0 0 24 24"
     className={`w-full h-auto ${className}`}
     {...rest}
