@@ -5,6 +5,7 @@ import profilePic from "../../public/images/profile/miku_avatar.jpg";
 import Animated from "@/components/Animated";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import Hireme from "@/components/Hireme";
 
 export default function Home() {
   return (
@@ -45,7 +46,7 @@ export default function Home() {
                   download={true}
                 >
                   我的简历
-                  <LinkArrow className="ml-1 w-5" />
+                  <LinkArrow className="ml-1 w-4" />
                 </Link>
                 <Link
                   href="mailto:michael.li.work@outlook.com"
@@ -58,6 +59,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <Hireme />
       </main>
     </>
   );
