@@ -34,7 +34,7 @@ export default function Home() {
                 Hi, 我是 Michael Li ! 一位 Front End
                 Coder，我致力于将想法转化为富有创意的 Web 应用程序。<br></br>
                 这里是我的个人主页，用来展示我的项目。我喜欢用 React.js
-                来构建项目，目前正在学习 Typescript 和 Node.js!
+                来构建项目，目前正在学习 TypeScript 和 Node.js!
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
