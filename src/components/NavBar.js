@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { TwitterIcon, GithubIcon, LinkArrow, InsIcon } from "./Icons";
+import { TwitterIcon, GithubIcon, InsIcon } from "./Icons";
 import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
