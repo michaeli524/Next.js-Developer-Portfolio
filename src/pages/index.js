@@ -22,10 +22,10 @@ export default function Home() {
                 src={profilePic}
                 alt="Michael Li"
                 priority="true"
-                className="h-auto w-full rounded-full"
+                className="h-auto w-full rounded-full max-h-[700px] max-w-[700px]"
               />
             </div>
-            <div className="w-1/2 flex flex-col items-center self-center">
+            <div className="w-1/2 flex flex-col items-start self-center">
               <Animated
                 text="Turning Vision Into Reality With Code And Design"
                 className="!text-6xl !text-left"
