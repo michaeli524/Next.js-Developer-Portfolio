@@ -3,6 +3,9 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import profilePic from "../../public/images/profile/michael-pic.jpg";
+import { JsIcon, NextIcon, ReactIcon, TsIcon } from "@/components/Icons";
 
 const about = () => {
   return (
@@ -17,15 +20,17 @@ const about = () => {
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <Animated text="Passion Fuels Purpose!" />
+          {/* Title */}
+          <Animated text="Passion Fuels Purpose!" className="mb-16" />
+          {/* Text */}
           <div className="grid w-full grid-cols-8 gap-16">
+            {/* Biography */}
             <div className="col-span-3 flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
               </h2>
               <p className="font-medium">
                 - Hi, 我是 Michael Li, 一名 Web 开发者，<br></br>
-                致力于将自己有趣的想法转化为富有创意的 Web 应用程序。<br></br>
                 Love coding for fun!
               </p>
               <p className="my-4 font-medium">
@@ -45,7 +50,42 @@ const about = () => {
               </p>
               <p className="font-medium">- 还可以发 Email/Twitter DM 给我</p>
             </div>
-            <div className="col-span03 relative h-max rounded-2xl bottom-2 border-solid border-dark bg-light p-8"></div>
+            {/* profile picture */}
+            <div className="col-span-3 relative //h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 w-72 h-84">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark" />
+              <Image src={profilePic} alt="Michael Li" className="rounded-md" />
+            </div>
+            {/* Text right */}
+            <div className="col-span-2 flex flex-col items-end justify-between">
+              {/* Tech Stacks */}
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-2xl font-bold text-dark/75">
+                  My Tech Stack
+                </span>
+                <h2 className="text-xl text-dark font-medium flex items-center my-2">
+                  JavaScript
+                  <JsIcon className="fill-yellow-400 ml-3 w-[30px] h-[30px]" />
+                </h2>
+                <h2 className="text-xl text-dark font-medium flex items-center">
+                  React.js
+                  <ReactIcon className="fill-blue-400 ml-3 w-[30px] h-[30px]" />
+                </h2>
+              </div>
+              {/* Learning */}
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-2xl font-bold text-dark/75">
+                  I&apos;m Learning
+                </span>
+                <h2 className="text-xl text-dark font-medium flex items-center my-2">
+                  TypeScript
+                  <TsIcon className="ml-3 w-[30px] h-[30px]" />
+                </h2>
+                <h2 className="text-xl text-dark font-medium flex items-center">
+                  Next.js
+                  <NextIcon className="ml-3 w-[30px] h-[30px]" />
+                </h2>
+              </div>
+            </div>
           </div>
         </Layout>
       </main>
