@@ -6,6 +6,7 @@ import React from "react";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/michael-pic.jpg";
 import { JsIcon, NextIcon, ReactIcon, TsIcon } from "@/components/Icons";
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -48,7 +49,16 @@ const about = () => {
                 <span className="inline-block">「我的简历」</span>
                 下载 pdf 简历
               </p>
-              <p className="font-medium">- 还可以发 Email/Twitter DM 给我</p>
+              <p className="font-medium">
+                - 如果您想和我进一步交流，可以在
+                <Link
+                  href="/"
+                  className="underline font-bold underline-offset-4"
+                >
+                  首页
+                </Link>
+                点击「联系我」发 Email 给我，或者是通过「Twitter」DM 我
+              </p>
             </div>
             {/* profile picture */}
             <div className="col-span-3 relative //h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 w-72 h-84">
@@ -87,6 +97,7 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
         </Layout>
       </main>
     </>
