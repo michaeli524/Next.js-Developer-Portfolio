@@ -5,8 +5,15 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/michael-pic.jpg";
-import { JsIcon, NextIcon, ReactIcon, TsIcon } from "@/components/Icons";
+import {
+  JsIcon,
+  NextIcon,
+  ReactIcon,
+  TailwindCSS,
+  TsIcon,
+} from "@/components/Icons";
 import Skills from "@/components/Skills";
+import Exprience from "@/components/Exprience";
 
 const about = () => {
   return (
@@ -63,7 +70,12 @@ const about = () => {
             {/* profile picture */}
             <div className="col-span-3 relative //h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 w-72 h-84">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark" />
-              <Image src={profilePic} alt="Michael Li" className="rounded-md" />
+              <Image
+                src={profilePic}
+                alt="Michael Li"
+                className="rounded-md"
+                priority={true}
+              />
             </div>
             {/* Text right */}
             <div className="col-span-2 flex flex-col items-end justify-between">
@@ -90,14 +102,19 @@ const about = () => {
                   TypeScript
                   <TsIcon className="ml-3 w-[30px] h-[30px]" />
                 </h2>
-                <h2 className="text-xl text-dark font-medium flex items-center">
+                <h2 className="text-xl text-dark font-medium flex items-center mb-2">
                   Next.js
                   <NextIcon className="ml-3 w-[30px] h-[30px]" />
+                </h2>
+                <h2 className="text-xl text-dark font-medium flex items-center">
+                  TailwindCSS
+                  <TailwindCSS className="ml-3 w-[30px] h-[30px]" />
                 </h2>
               </div>
             </div>
           </div>
           <Skills />
+          <Exprience />
         </Layout>
       </main>
     </>
