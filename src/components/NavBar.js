@@ -5,10 +5,10 @@ import { useRouter } from "next/router";
 import { TwitterIcon, GithubIcon, InsIcon } from "./Icons";
 import { motion } from "framer-motion";
 
-const CustomLink = ({ href, title, className = "" }) => {
+const CustomLink = ({ href, title, className = "", target = "" }) => {
   const router = useRouter();
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group`} target={target}>
       {title}
       <span
         className={`h-[1px] inline-block bg-black absolute 
