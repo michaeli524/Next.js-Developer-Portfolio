@@ -5,8 +5,14 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Michael Li | Projects</title>
+        <title>Michael Li | Projects Page</title>
+        <meta name="author" content="Michael Li" />
+        <meta
+          name="description"
+          content="This is Michael Li's Portfolio website"
+        />
       </Head>
+      <div></div>
     </>
   );
 };
