@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Hireme = () => {
   return (
-    <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden">
-      <div className="h-auto flex items-center justify-center overflow-hidden relative">
+    <div className="fixed left-2 bottom-4 flex items-center justify-center overflow-hidden">
+      <div className="flex items-center justify-center overflow-hidden relative">
         <CircularText className={"fill-dark animate-spin-slow"} />
         <Link
           href="mailto:michael.work.li@outlook.com"
