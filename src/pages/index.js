@@ -46,12 +46,12 @@ export default function Home() {
                   download={true}
                 >
                   我的简历
-                  <LinkArrow className="ml-1 w-[16px]" />
+                  <LinkArrow className="ml-1 w-5 max-w-[20px]" />
                 </Link>
                 <Link
                   href="mailto:michael.li.work@outlook.com"
                   target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline underline-offset-4"
                 >
                   联系我
                 </Link>
