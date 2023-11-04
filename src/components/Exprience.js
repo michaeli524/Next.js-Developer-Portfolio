@@ -11,12 +11,12 @@ const Details = ({ position, school, schoolLink, time, address, work }) => {
           <a
             href={schoolLink}
             target="_blank"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize"
           >
             @{school}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -40,7 +40,7 @@ const Exprience = () => {
       >
         <div
           // style={{ scaleY: scrollYProgress }}
-          className="absolute left-8 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-8 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
         />
 
         <ul>
