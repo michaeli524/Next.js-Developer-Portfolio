@@ -30,8 +30,12 @@ const FeturedProject = ({
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
-        <Link href={link} target="_blank">
-          <h2>{title}</h2>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
         <p>{summary}</p>
         <div>
