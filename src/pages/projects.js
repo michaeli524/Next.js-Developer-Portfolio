@@ -18,7 +18,7 @@ const FeturedProject = ({
   return (
     <article
       className="w-full flex items-center justify-between
-      rounded-3xl border border-solid border-dark bg-light shadow-2xl"
+      rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6"
     >
       <Link
         href={link}
@@ -37,12 +37,16 @@ const FeturedProject = ({
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
-        <p>{summary}</p>
-        <div>
+        <p className="my-2 font-medium text-dark">{summary}</p>
+        <div className="mt-2 flex items-center">
           <Link href={github} target="_blank">
-            <GithubIcon className="" />
+            <GithubIcon className="w-10" />
           </Link>
-          <Link href={link} target="_blank">
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+          >
             Visit Project
           </Link>
         </div>
@@ -64,7 +68,7 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
-          <Animated text="Imagination Trumps Konwledge!" />
+          <Animated text="Imagination Trumps Konwledge!" className="mb-16" />
           <div className="grid grid-cols-12 gap-24">
             <div className="col-span-12">
               <FeturedProject
