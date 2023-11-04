@@ -41,8 +41,8 @@ const FeacturedProject = ({
         </Link>
         <p className="my-2 font-medium text-dark">{summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={github} target="_blank">
-            <GithubIcon className="w-10" />
+          <Link href={github} target="_blank" className="w-10">
+            <GithubIcon />
           </Link>
           <Link
             href={link}
