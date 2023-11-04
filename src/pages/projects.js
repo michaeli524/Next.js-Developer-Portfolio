@@ -5,9 +5,10 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/react-admin-dashboard.png";
+import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
+import nextPortfolio from "../../public/images/projects/next-portfolio.png";
 
-const FeturedProject = ({
+const FeacturedProject = ({
   type,
   title,
   summary,
@@ -17,9 +18,10 @@ const FeturedProject = ({
 }) => {
   return (
     <article
-      className="w-full flex items-center justify-between
-      rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6"
+      className="w-full flex items-center justify-between relative rounded-br-2xl
+      rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12"
     >
+      <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5em] bg-dark rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -55,6 +57,53 @@ const FeturedProject = ({
   );
 };
 
+const Project = ({ title, type, img, link, github }) => {
+  return (
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl
+      border border-solid border-dark bg-light p-6 relative"
+    >
+      <div className="absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2em] bg-dark rounded-br-3xl" />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority="true"
+        />
+      </Link>
+
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+        </Link>
+        {/* <p className="my-2 font-medium text-dark">{summary}</p> */}
+        <div className="w-full mt-2 flex items-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-lg font-semibold underline"
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank">
+            <GithubIcon className="w-8" />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
 const projects = () => {
   return (
     <>
@@ -68,23 +117,39 @@ const projects = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-16">
-          <Animated text="Imagination Trumps Konwledge!" className="mb-16" />
-          <div className="grid grid-cols-12 gap-24">
+          <Animated text="Imagination Trumps Knowledge!" className="mb-16" />
+          <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
-              <FeturedProject
-                title="React Admin Dashboard"
+              <FeacturedProject
+                title="Next TailWindCSS Protfolio"
                 summary="一个用 ReactJS 和 Material-UI 构建的 Admin Dashboard 项目"
                 link="https://fancy-admin.vercel.app/"
                 github="https://github.com/michaeli524/react-admin-dashboard"
-                img={project1}
-                type="Featured Project"
+                img={nextPortfolio}
+                type="Portfolio Website"
               />
             </div>
-            <div className="col-span-6">Project-1</div>
-            <div className="col-span-6">Project-2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">Project-3</div>
-            <div className="col-span-6">Project-4</div>
+            {/* <div className="col-span-6">
+              <Project
+                title="React Admin Dashboard"
+                link="https://fancy-admin.vercel.app/"
+                github="https://github.com/michaeli524/react-admin-dashboard"
+                img={reactAdmin}
+                type="Featured Project"
+              />
+            </div> */}
+            <div className="col-span-12">
+              <FeacturedProject
+                title="React Admin Dashboard"
+                summary="一个用 ReactJS Material-UI 和 Nivo Charts 构建的 Admin Dashboard Template 项目"
+                link="https://fancy-admin.vercel.app/"
+                github="https://github.com/michaeli524/react-admin-dashboard"
+                img={reactAdmin}
+                type="Website Template"
+              />
+            </div>
+            {/* <div className="col-span-6">Project-3</div>
+            <div className="col-span-6">Project-4</div> */}
           </div>
         </Layout>
       </main>

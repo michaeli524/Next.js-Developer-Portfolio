@@ -38,7 +38,8 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                - Hi, 我是 Michael Li, 一名 Web 开发者，<br></br>
+                - Hi, 我是 Michael Li, 一名 Web Developer/Front End Coder，
+                <br></br>
                 Love coding for fun!
               </p>
               <p className="my-4 font-medium">
