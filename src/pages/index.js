@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/miku_avatar.jpg";
+import profilePic from "../../public/images/profile/miku_avatar.PNG";
 import Animated from "@/components/Animated";
 import Link from "next/link";
 import { DownloadIcon, LinkArrow } from "@/components/Icons";
