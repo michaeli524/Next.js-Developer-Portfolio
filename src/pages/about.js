@@ -26,7 +26,7 @@ const about = () => {
           content="This is Michael Li's Portfolio website"
         />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           {/* Title */}
           <Animated text="Passion Fuels Purpose!" className="mb-16" />
@@ -34,7 +34,7 @@ const about = () => {
           <div className="grid w-full grid-cols-8 gap-16">
             {/* Biography */}
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-medium">
@@ -82,32 +82,32 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between">
               {/* Tech Stacks */}
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-2xl font-bold text-dark/75">
+                <span className="inline-block text-2xl font-bold text-dark/75 dark:text-light/75">
                   My Tech Stack
                 </span>
-                <h2 className="text-xl text-dark font-medium flex items-center my-2">
+                <h2 className="text-xl text-dark font-medium flex items-center my-2 dark:text-light">
                   JavaScript
                   <JsIcon className="fill-yellow-400 ml-3 w-[30px] h-[30px]" />
                 </h2>
-                <h2 className="text-xl text-dark font-medium flex items-center">
+                <h2 className="text-xl text-dark font-medium flex items-center dark:text-light">
                   React.js
                   <ReactIcon className="fill-blue-400 ml-3 w-[30px] h-[30px]" />
                 </h2>
               </div>
               {/* Learning */}
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-2xl font-bold text-dark/75">
+                <span className="inline-block text-2xl font-bold text-dark/75 dark:text-light/75">
                   I&apos;m Learning
                 </span>
-                <h2 className="text-xl text-dark font-medium flex items-center my-2">
+                <h2 className="text-xl text-dark font-medium flex items-center my-2 dark:text-light">
                   TypeScript
                   <TsIcon className="ml-3 w-[30px] h-[30px]" />
                 </h2>
-                <h2 className="text-xl text-dark font-medium flex items-center mb-2">
+                <h2 className="text-xl text-dark font-medium flex items-center mb-2 dark:text-light">
                   Next.js
                   <NextIcon className="ml-3 w-[30px] h-[30px]" />
                 </h2>
-                <h2 className="text-xl text-dark font-medium flex items-center">
+                <h2 className="text-xl text-dark font-medium flex items-center dark:text-light">
                   TailwindCSS
                   <TailwindCSS className="ml-3 w-[30px] h-[30px]" />
                 </h2>
