@@ -21,8 +21,9 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Michael Li"
-                priority="true"
                 className="h-auto w-full rounded-full max-h-[700px] max-w-[700px]"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             <div className="w-1/2 flex flex-col items-start self-center">

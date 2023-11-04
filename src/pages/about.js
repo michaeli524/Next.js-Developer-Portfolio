@@ -78,7 +78,8 @@ const about = () => {
                 src={profilePic}
                 alt="Michael Li"
                 className="rounded-md"
-                priority={true}
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             {/* Text right */}
