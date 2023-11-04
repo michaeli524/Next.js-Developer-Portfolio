@@ -33,9 +33,11 @@ export default function Home() {
               <p className="my-4 text-base font-medium">
                 Hi, 我是 Michael Li ! 一位 Front End
                 Coder，我致力于将想法转化为富有创意的 Web 应用程序。<br></br>
-                这里是我的个人主页，展示着我的项目和Blog，
-                展示我对Web/前端开发的理解。<br></br>我喜欢用 React.js
-                来构建应用，目前正在学习 TypeScript 和 Next.js!
+                欢迎来访我的个人主页，这里展示着我的项目和Blog，
+                以展示我对Web/前端开发的理解。<br></br>我喜欢用 React.js
+                来构建应用。
+                <br></br>
+                Now focus on TypeScript Next.js and Tailwind CSS!
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link

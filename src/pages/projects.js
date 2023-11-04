@@ -119,14 +119,15 @@ const projects = () => {
         <Layout className="pt-16">
           <Animated text="Imagination Trumps Knowledge!" className="mb-16" />
           <div className="grid grid-cols-12 gap-24 gap-y-32">
+            {/* Project 1 */}
             <div className="col-span-12">
               <FeacturedProject
-                title="Next TailWindCSS Protfolio"
-                summary="一个用 ReactJS 和 Material-UI 构建的 Admin Dashboard 项目"
-                link="https://fancy-admin.vercel.app/"
-                github="https://github.com/michaeli524/react-admin-dashboard"
+                title="Next.js Tailwind CSS Portfolio"
+                summary="一个使用 NextJS、Tailwind CSS 和 Framer Motion 构建的个人主页项目"
+                link="/"
+                github="https://github.com/michaeli524/Next.js-Developer-Portfolio"
                 img={nextPortfolio}
-                type="Portfolio Website"
+                type="&hearts;&nbsp;Portfolio Website"
               />
             </div>
             {/* <div className="col-span-6">
@@ -138,10 +139,22 @@ const projects = () => {
                 type="Featured Project"
               />
             </div> */}
+            {/* Project 2 */}
+            <div className="col-span-12">
+              <FeacturedProject
+                title="React Node Blog System"
+                summary="一个使用 ReactJS、NodeJS 和  构建的博客系统项目"
+                link="https://fancy-admin.vercel.app/"
+                github="https://github.com/michaeli524/react-admin-dashboard"
+                img={reactAdmin}
+                type="Full Stack Project"
+              />
+            </div>
+            {/* Project 3 */}
             <div className="col-span-12">
               <FeacturedProject
                 title="React Admin Dashboard"
-                summary="一个用 ReactJS Material-UI 和 Nivo Charts 构建的 Admin Dashboard Template 项目"
+                summary="一个使用 ReactJS、Material-UI 和 Nivo Charts 构建的后台管理仪表模版项目"
                 link="https://fancy-admin.vercel.app/"
                 github="https://github.com/michaeli524/react-admin-dashboard"
                 img={reactAdmin}
