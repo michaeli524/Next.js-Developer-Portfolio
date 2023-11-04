@@ -24,7 +24,7 @@ const Footer = () => {
           className="underline underline-offset-2"
           target={"_blank"}
         >
-          Tweet me
+          Tweet DM me
         </Link>
       </Layout>
     </footer>
