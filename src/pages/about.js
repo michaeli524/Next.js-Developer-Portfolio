@@ -13,6 +13,7 @@ import {
 } from "@/components/Icons";
 import Skills from "@/components/Skills";
 import Exprience from "@/components/Exprience";
+import TransitionEffect from "@/components/TransitionEffect";
 const profilePic = "/images/profile/michael-pic.jpg";
 
 const about = () => {
@@ -26,6 +27,7 @@ const about = () => {
           content="This is Michael Li's Portfolio website"
         />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           {/* Title */}

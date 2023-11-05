@@ -6,6 +6,7 @@ import React from "react";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 // import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
 // import nextPortfolio from "../../public/images/projects/next-portfolio.png";
 const reactAdmin = "/images/projects/react-admin-dashboard.png";
@@ -139,6 +140,7 @@ const projects = () => {
           content="This is Michael Li's Portfolio website"
         />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <Animated text="Imagination Trumps Knowledge!" className="mb-16" />
