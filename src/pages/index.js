@@ -23,12 +23,12 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Michael Li"
-                responsive
+                responsive={true}
                 width={700}
                 height={700}
                 className="rounded-full 
                 //h-autow-fullmax-h-[700px]max-w-[700px]"
-                priority
+                priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>

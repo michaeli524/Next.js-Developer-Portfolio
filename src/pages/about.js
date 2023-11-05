@@ -82,7 +82,7 @@ const about = () => {
                 className="rounded-md"
                 width={240}
                 height={360}
-                priority
+                priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
