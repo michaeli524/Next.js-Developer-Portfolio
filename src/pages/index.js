@@ -1,11 +1,11 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/miku_avatar.png";
 import Animated from "@/components/Animated";
 import Link from "next/link";
 import { DownloadIcon, LinkArrow } from "@/components/Icons";
 import Hireme from "@/components/Hireme";
+const profilePic = "/images/profile/miku_avatar.png";
 
 export default function Home() {
   return (
@@ -21,7 +21,11 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Michael Li"
-                className="h-auto w-full rounded-full max-h-[700px] max-w-[700px]"
+                responsive
+                width={700}
+                height={700}
+                className="rounded-full 
+                //h-autow-fullmax-h-[700px]max-w-[700px]"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
