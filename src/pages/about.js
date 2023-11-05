@@ -20,7 +20,7 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Michael Li | About Page</title>
+        <title>Michael Li | About</title>
         <meta name="author" content="Michael Li" />
         <meta
           name="description"

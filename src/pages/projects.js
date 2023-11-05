@@ -133,7 +133,7 @@ const projects = () => {
   return (
     <>
       <Head>
-        <title>Michael Li | Projects Page</title>
+        <title>Michael Li | Projects</title>
         <meta name="author" content="Michael Li" />
         <meta
           name="description"
