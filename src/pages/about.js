@@ -4,7 +4,6 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import profilePic from "../../public/images/profile/michael-pic.jpg";
 import {
   JsIcon,
   NextIcon,
@@ -14,6 +13,7 @@ import {
 } from "@/components/Icons";
 import Skills from "@/components/Skills";
 import Exprience from "@/components/Exprience";
+const profilePic = "/images/profile/michael-pic.jpg";
 
 const about = () => {
   return (
@@ -70,7 +70,7 @@ const about = () => {
             </div>
             {/* profile picture */}
             <div
-              className="col-span-3 relative //h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 w-72 h-84
+              className="col-span-3 relative rounded-2xl border-2 border-solid border-dark bg-light p-8 w-72 h-84
             dark:bg-dark dark:border-light"
             >
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
@@ -78,6 +78,8 @@ const about = () => {
                 src={profilePic}
                 alt="Michael Li"
                 className="rounded-md"
+                width={240}
+                height={360}
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />

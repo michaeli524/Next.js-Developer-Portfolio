@@ -5,9 +5,11 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
-import nextPortfolio from "../../public/images/projects/next-portfolio.png";
 import { motion } from "framer-motion";
+// import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
+// import nextPortfolio from "../../public/images/projects/next-portfolio.png";
+const reactAdmin = "/images/projects/react-admin-dashboard.png";
+const nextPortfolio = "/images/projects/next-portfolio.png";
 
 const FramerImage = motion(Image);
 
@@ -34,6 +36,9 @@ const FeacturedProject = ({
           src={img}
           alt={title}
           className="w-full h-auto"
+          responsive
+          width={400}
+          height={180}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
