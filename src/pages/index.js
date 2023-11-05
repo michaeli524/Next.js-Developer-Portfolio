@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Animated from "@/components/Animated";
 import Link from "next/link";
-import { DownloadIcon, LinkArrow } from "@/components/Icons";
+import { DownloadIcon } from "@/components/Icons";
 import Hireme from "@/components/Hireme";
 const profilePic = "/images/profile/miku_avatar.png";
 
