@@ -9,12 +9,13 @@ import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 // import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
 // import nextPortfolio from "../../public/images/projects/next-portfolio.png";
-const reactAdmin = "/images/projects/react-admin-dashboard.png";
 const nextPortfolio = "/images/projects/next-portfolio.png";
+const blogSystem = "/images/projects/next-portfolio.png";
+const reactAdmin = "/images/projects/react-admin-dashboard.png";
 
 const FramerImage = motion(Image);
 
-const FeacturedProject = ({
+const FeaturedProject = ({
   type,
   title,
   summary,
@@ -37,7 +38,7 @@ const FeacturedProject = ({
           src={img}
           alt={title}
           className="w-full h-auto"
-          responsive={true}
+          responsive="true"
           width={400}
           height={180}
           whileHover={{ scale: 1.05 }}
@@ -145,17 +146,7 @@ const projects = () => {
         <Layout className="pt-16">
           <Animated text="Imagination Trumps Knowledge!" className="mb-16" />
           <div className="grid grid-cols-12 gap-24 gap-y-32">
-            {/* Project 1 */}
-            <div className="col-span-12">
-              <FeacturedProject
-                title="Next.js Tailwind CSS Portfolio"
-                summary="一个基于 NextJS、Tailwind CSS 和 Framer Motion 构建的个人主页项目"
-                link="/"
-                github="https://github.com/michaeli524/Next.js-Developer-Portfolio"
-                img={nextPortfolio}
-                type="&hearts;&nbsp;Portfolio Website"
-              />
-            </div>
+            {/* Project Example */}
             {/* <div className="col-span-6">
               <Project
                 title="React Admin Dashboard"
@@ -165,20 +156,31 @@ const projects = () => {
                 type="Featured Project"
               />
             </div> */}
+            {/* Project 1 */}
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Next.js Tailwind CSS Portfolio"
+                summary="一个基于 NextJS、Tailwind CSS 和 Framer Motion 构建的个人主页项目"
+                link="/"
+                github="https://github.com/michaeli524/Next.js-Developer-Portfolio"
+                img={nextPortfolio}
+                type="&hearts;&nbsp;Portfolio Website"
+              />
+            </div>
             {/* Project 2 */}
             <div className="col-span-12">
-              <FeacturedProject
+              <FeaturedProject
                 title="React Node Blog System"
-                summary="一个基于 ReactJS、NodeJS 和  构建的博客系统项目"
+                summary="一个基于 ReactJS、NodeJS 和 MongoDB 构建的全栈博客系统项目"
                 link="https://fancy-admin.vercel.app/"
                 github="https://github.com/michaeli524/react-admin-dashboard"
-                img={reactAdmin}
+                img={blogSystem}
                 type="Full Stack Project"
               />
             </div>
             {/* Project 3 */}
             <div className="col-span-12">
-              <FeacturedProject
+              <FeaturedProject
                 title="React Admin Dashboard"
                 summary="一个基于 ReactJS、Material-UI 和 Nivo Charts 构建的后台管理仪表模版项目"
                 link="https://fancy-admin.vercel.app/"

@@ -23,7 +23,7 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Michael Li"
-                responsive={true}
+                responsive="true"
                 width={700}
                 height={700}
                 className="rounded-full 
