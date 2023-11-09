@@ -10,7 +10,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 // import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
 // import nextPortfolio from "../../public/images/projects/next-portfolio.png";
 const nextPortfolio = "/images/projects/next-portfolio.png";
-const blogSystem = "/images/projects/next-portfolio.png";
+const blogSystem = "/images/projects/react-node-blog-system.png";
 const reactAdmin = "/images/projects/react-admin-dashboard.png";
 
 const FramerImage = motion(Image);
@@ -161,7 +161,7 @@ const projects = () => {
               <FeaturedProject
                 title="Next.js Tailwind CSS Portfolio"
                 summary="一个基于 NextJS、Tailwind CSS 和 Framer Motion 构建的个人主页项目"
-                link="/"
+                link="https://mikolee.xyz"
                 github="https://github.com/michaeli524/Next.js-Developer-Portfolio"
                 img={nextPortfolio}
                 type="&hearts;&nbsp;Portfolio Website"
@@ -173,7 +173,7 @@ const projects = () => {
                 title="React Node Blog System"
                 summary="一个基于 ReactJS、NodeJS 和 MongoDB 构建的全栈博客系统项目"
                 link="https://fancy-admin.vercel.app/"
-                github="https://github.com/michaeli524/react-admin-dashboard"
+                github="https://github.com/michaeli524/react-node-blog-system"
                 img={blogSystem}
                 type="Full Stack Project"
               />
