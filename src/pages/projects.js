@@ -7,8 +7,6 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
-// import reactAdmin from "../../public/images/projects/react-admin-dashboard.png";
-// import nextPortfolio from "../../public/images/projects/next-portfolio.png";
 const nextPortfolio = "/images/projects/next-portfolio.png";
 const blogSystem = "/images/projects/react-node-blog-system.png";
 const reactAdmin = "/images/projects/react-admin-dashboard.png";
