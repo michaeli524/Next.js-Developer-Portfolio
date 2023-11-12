@@ -170,7 +170,7 @@ const projects = () => {
               <FeaturedProject
                 title="React Node Blog System"
                 summary="一个基于 ReactJS、NodeJS 和 MongoDB 构建的全栈博客系统项目"
-                link="https://fancy-admin.vercel.app/"
+                link="https://react-node-blog-system.project.mikolee.xyz/"
                 github="https://github.com/michaeli524/react-node-blog-system"
                 img={blogSystem}
                 type="Full Stack Project"
